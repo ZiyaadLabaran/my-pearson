@@ -76,7 +76,7 @@ nav a {
     text-align: center;
     padding: 50px;
     background:  linear-gradient(rgba(42, 128, 162, 0.668), rgba(64, 142, 8, 0.762)),
-    url('imgs/freedom.jpg') center/cover ;
+    url('freedom.jpg') center/cover ;
     margin-bottom: 30px;
     animation: fadeIn 2s ease-in-out;
 }
