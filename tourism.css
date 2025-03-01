@@ -72,7 +72,7 @@ nav {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(196, 209, 6, 0.247), rgba(31, 62, 36, 0.762)),
-              url('imgs/elephant.jpg') center/cover ;
+              url('elephant.jpg') center/cover ;
               background-attachment: fixed;
   display: flex;
   width: 100%;
@@ -372,7 +372,7 @@ a:hover::after {
   padding: 40px;
   gap: 40px;
   background:  linear-gradient(rgba(100, 101, 92, 0.668), rgba(50, 36, 9, 0.762)),
-  url('imgs/freedom.jpg') center/cover ;
+  url('freedom.jpg') center/cover ;
   background-attachment: fixed;;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeIn 2s ease-in-out;
