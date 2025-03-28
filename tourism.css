@@ -51,7 +51,6 @@ nav {
   position: absolute;
   width: 0;
   height: 2px;
-
   display: block;
   margin-top: 5px;
   left: 0;
@@ -67,7 +66,6 @@ nav {
 .nav-links a:hover {
   color: var(--secondary-blue);
 }
-
 
 .hero {
   height: 100vh;
@@ -90,7 +88,7 @@ nav {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   animation: fadeIn 2s ease-out;
 }
-
+/* 
 .search-bar {
   position: absolute;
   top: 70%;
@@ -123,7 +121,7 @@ nav {
 
 .search-button:hover {
   background: #8ca31a;
-}
+} */
 
 .destinations {
   padding: 4rem 2rem;
@@ -245,8 +243,8 @@ nav {
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
 }
+ 
 
-/* Section Styles */
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -310,12 +308,6 @@ a:hover::after {
   transform: scale(1.2);
 }
 
-@media (max-width: 600px) {
-  footer {
-      flex-direction: column;
-      align-items: center;
-  }
-}
 
 .copyright {
   text-align: center;
@@ -325,45 +317,11 @@ a:hover::after {
   width: 100%;
 }
 
-/* Animation on Hover */
 .fade-in {
   animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
-@keyframes scroll {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-}
-
-@keyframes loading {
-  from {
-      transform: rotate(0turn);
-  }
-  to {
-      transform: rotate(1turn);
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-/* Container for the video section */
 .video-section {
   display: flex;
   flex-wrap: wrap;
@@ -384,10 +342,9 @@ a:hover::after {
 }
 
 .video-container iframe:hover {
-  transform: scale(1.05);  /* Slight zoom effect on hover */
+  transform: scale(1.05);  
 }
 
-/* Tourist content section */
 .tourist-content {
   max-width: 400px;
   color: #333;
@@ -425,7 +382,6 @@ a:hover::after {
   background-color: var(--secondary-blue);
 }
 
-/* Keyframe Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -457,6 +413,37 @@ a:hover::after {
   }
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes loading {
+  from {
+      transform: rotate(0turn);
+  }
+  to {
+      transform: rotate(1turn);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 @media (max-width: 768px) {
   .hero-content h1 {
       font-size: 2.5rem;
@@ -488,7 +475,7 @@ a:hover::after {
       margin-left: 25%;
   }
 }
-/* Mobile Styles */
+
 @media (max-width: 768px) {
  
  
@@ -525,5 +512,12 @@ a:hover::after {
 
   footer .social-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
   }
 }
