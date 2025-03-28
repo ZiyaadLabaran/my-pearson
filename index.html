@@ -75,8 +75,6 @@
         </div>
     </section>
 
-
-
     <section class="destinations">
       <h2>Dance and Festivals</h2>
       <div class="destinations-grid">
@@ -150,8 +148,6 @@
 </section>
 
   <section class="video-section">
-    
-    <!-- Tourist Content -->
     <div class="tourist-content">
       <h2>Discover the Beauty of Ghana</h2>
       <p style="color: white;"  >Ghana is a treasure trove of rich culture, breathtaking landscapes, and captivating history. From the vibrant festivals to the serene beaches, the lush forests to the historic castles, every corner of this beautiful country tells a unique story. Come and immerse yourself in the warmth of Ghanaian hospitality, explore our diverse wildlife, and experience the rhythm of our culture. Come and experience Ghana – where memories are made and hearts are touched</p>
@@ -161,8 +157,7 @@
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pGSE46PEsME?si=6rBZv3c_D_5p-QVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-  </section>
- <div class="loader"></div>    
+  </section> 
  <footer>
     <div style="display: block;">
         <h1>DI BTEC PROJECT</h1>
@@ -207,7 +202,7 @@
       © 2025 Ziyaad Labaran. All rights reserved.
   </div>
 </footer>
-
+<div class="loader"></div>
 <script>
 
   document.querySelector('.main-section').addEventListener('mouseenter', function() {
@@ -229,7 +224,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log("Discover and Experience Ghana!");
 });
+ 
+window.addEventListener("load",() =>{
+const loader = document.querySelector(".loader");
 
+loader.classList.add("loader-hidden");
+
+loader.addEventListener("transitionend",() => {
+document.body.removeChild("loader");
+})
+})
   </script>
 </body>
 </html>
