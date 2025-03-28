@@ -14,17 +14,17 @@ document.querySelector('.main-section').addEventListener('mouseenter', function(
 
  
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Discover and Experience Ghana!");
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   console.log("Discover and Experience Ghana!");
+// });
  
-window.addEventListener("load",() =>{
-const loader = document.querySelector(".loader");
+// window.addEventListener("load",() =>{
+// const loader = document.querySelector(".loader");
 
-loader.classList.add("loader-hidden");
+// loader.classList.add("loader-hidden");
 
-loader.addEventListener("transitionend",() => {
-document.body.removeChild("loader");
-})
-})
+// loader.addEventListener("transitionend",() => {
+// document.body.removeChild("loader");
+// })
+// })
 
